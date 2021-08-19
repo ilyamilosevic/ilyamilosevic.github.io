@@ -66,6 +66,12 @@ ul ul {
     margin-bottom: 0.8em;
 }
 
+@media (max-device-width: 480px) {
+    img {
+        width: 100%;
+    }
+}
+
 @media print {
     a {
         color: black;
