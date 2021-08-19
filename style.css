@@ -72,6 +72,12 @@ ul ul {
     }
 }
 
+@media (min-device-width: 480px) {
+    img {
+        width: 548px;
+    }
+}
+
 @media print {
     a {
         color: black;
