@@ -4,77 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./new.css" />
     <title>Ilya Milošević</title>
   </head>
   <body>
-    <h1>Илья Милошевич, разработчик интерфейсов</h1>
+    <heading class="heading">
+      <h1 class="header">Ilya Milošević</h1>
+      <p><strong>Front-end engineer</strong></p>
+      <p>Remote, relocate</p>
+      <p>Currently in Belgrade, Serbia</p>
+    </heading>
     <main>
-      <h2>Опыт</h2>
-      <ul>
-        <li>
-          <span><a href="//alfabank.ru/">Альфа-банк</a> <span>Март 2019 — Июнь 2021</span></span>
-          <ul>
-            <li>Разработал <a href="//alfabank.ru/sme/tariffs/calculator/">подборщик тарифов для бизнеса</a> с анимированной фильтрацией, возможностью добавления новых полей и настройки взаимосвязи между полями</li>
-            <li>Разрабатывал и поддерживал внутреннюю CMS</li>
+      <h2>Work Experience</h2>
+      <section class="job">
+          <p class="job-prop">March 2022 – now</p>
+          <p class="job-prop">
+            <strong>Avito</strong>
+            <span>Biggest classifieds site in the world</span>
+          </p>
+          <p class="job-prop">
+            <strong>Senior front-end engineer</strong>
+            <span>Cart team</span>
+          </p>
+          <ul class="job-achievements">
             <li>
-              Внедрил и масштабировал подход для создания
-              <a href="//alfabank.ru/sme/#Open-Account">пошаговых форм</a>
+                Developed a shopping cart checkout page for two platforms (desktop and mobile) using React, Redux, and CSS modules,
+                which enabled the launch of the world's first classifieds with a shopping cart
             </li>
-            <li>
-              Разработал <a href="//alfabank.ru/sme/profits-new/">Кредитный калькулятор</a>
-            </li>
-            <li>
-              Лидил в команде: формировал бэклог задач, принимал архитектурные
-              решения, следил за эффективностью и ростом разработчиков
-            </li>
+            <li>Developed a user's stock page with an infinite list of products</li>
           </ul>
-        </li>
-        <li>
-          <span><a href="//litres.ru">ЛитРес</a> <span>Август 2017 — Март 2019</span></span>
-          <ul>
-            <li>
-              Переводил
-              <a href="//litres.ru/o-kompanii/partneram/generator-otryvka/"
-                >Литрес:читалку</a
-              >
-              на API
-              <a href="//docs.litres.ru/pages/viewpage.action?pageId=6424295"
-                >CataLit2</a
-              >
-              и формат электронных книг
-              <a href="//github.com/gribuser/FB3">FB3</a>
-            </li>
-            <li>
-              Разработал
-              
-              <a href="//litres.ru/static/litres/pages/libhouse_filial/"
-                >карту</a
-              >
-              филиалов библиотек для Литрес:Библиотеки
-            </li>
-            <li>
-              Работал над дизайн-системой и подготавливал новый
-              проект для правообладателей на современном стеке: webpack, React,
-              Redux, css modules
-            </li>
-          </ul>
-        </li>
-        <li>
-          Также: во время учебы работал на компанию, среди клиентов которой были
-          градостроительный университет и Аэрофлот. Из интересного: внедрил
-          векторные карты Mapbox GL и внес небольшой
-          <a href="//github.com/mapbox/mapbox-gl-draw/issues/484">контрибьют</a>
-          в их векторный редактор
-        </li>
-      </ul>
+        </section>
+      <section class="job">
+        <p class="job-prop">March 2019 – January 2021</p>
+        <p class="job-prop">
+          <strong>Alfa-Bank</strong>
+          <span>Largest of the private banks in Russia</span>
+        </p>
+        <p class="job-prop">
+          <strong>Senior front-end engineer</strong>
+          <span>Small and medium-sized enterprises</span>
+        </p>
+        <ul class="job-achievements">
+          <li>
+              Was the technical lead in the team of 2 front-end
+              developers, directed the formation and prioritization of a backlog of 20+ tasks using Agile
+              methodology, made architectural decisions, and monitored the team's performance, resulting in successful delivery of 2 main projects
+          </li>
+          <li>
+            Built a tariff picker using React and CSS animations, streamlining the process of selecting tariffs
+            and resulting in a 90% reduction in selection time</li>
+          <li>
+            Managed the development of the form builder. Wrote 70% of the code,
+            reviewed the remaining 30%. Reduced the amount of code by 2 times
+            compared to the old version and reduced the release cycle from a
+            week to several hours, transferring layout and form content control
+            to content management team
+          </li>
+          <li>
+            Built dozens of highly interactive pages, adding new components to the design system using advanced approaches such
+            as compound components, React Context, portals and centralized management of z-index
+          </li>
+        </ul>
+      </section>
+      <section class="job">
+        <p class="job-prop">August 2017 – March 2019</p>
+        <p class="job-prop">
+          <strong>LitRes</strong>
+          <span>International company that produces and distributes e-books and digital audiobooks</strong>
+        </p>
+        <p class="job-prop">
+          <strong>Front-end engineer</strong>
+          <span>Front-end development team</span>
+        </p>
+        <ul class="job-achievements">
+          <li>
+            Built an entire front-end of the map widget for book libraries,
+            which is embedded in dozens of pages of LitRes internal and external
+            projects. Provided 30 - 40% lightness of the widget compared to
+            similar solutions
+          </li>
+          <li>
+            Implemented a modern design system on a React-based stack, showcased its value
+            to senior management, and persuaded them to transition all main projects, centralizing development and deduplicating code by 2 times
+          </li>
+          <li>Was the main contributor to the web version of the book reading application: migrated the application to a new API version for saving quotes and supported the new FB3 format</li>
+          <li>Developed complex pages and widgets such as a page for viewing all books with multiple filters and a widget for ratings and comments</li>
+        </ul>
+      </section>
+      <h2>Contacts</h2>
+      <section class="contacts">
+        <p class="contact">
+          <a href="mailto:ilyamilosevic@gmail.com">Mail</a>
+        </p>
+        <p class="contact"><a href="//t.me/ilyamilosevic">Telegram</a></p>
+        <p class="contact">
+          <a href="https://github.com/ilyamilosevic">Github</a>
+        </p>
+      </section>
     </main>
-    <footer>
-      <br />
-      <p>© 2021</p>
-      <p>
-        <a href="//t.me/ilyamilosevic">Telegram</a>
-      </p>
-    </footer>
   </body>
 </html>
