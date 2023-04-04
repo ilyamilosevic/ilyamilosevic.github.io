@@ -13,7 +13,7 @@ export default {
   input: './build/index.js',
   output: {
     file: 'index.bundled.js',
-    format: 'esm',
+    format: 'iife',
   },
   onwarn(warning) {
     if (warning.code !== 'THIS_IS_UNDEFINED') {

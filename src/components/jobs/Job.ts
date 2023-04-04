@@ -59,6 +59,20 @@ export class Job extends LitElement {
       right: 0;
     }
 
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:focus {
+      outline: none;
+    }
+
+    summary:-internal-direct-focus {
+      outline-color: -webkit-focus-ring-color;
+      outline-style: auto;
+      outline-width: 5px;
+    }
+
     @media (max-width: 500px) {
       summary span {
         font-size: 0.2rem;
@@ -85,12 +99,12 @@ export class Job extends LitElement {
   companyDescription = '';
 
   @property({
-    attribute: 'work-period-from'
+    attribute: 'work-period-from',
   })
   workPeriodFrom?: String;
 
   @property({
-    attribute: 'work-period-to'
+    attribute: 'work-period-to',
   })
   workPeriodTo?: String;
 
@@ -117,10 +131,7 @@ export class Job extends LitElement {
             <p>${this.companyDescription}</p>
           </hgroup>
           ${this.workPeriodFrom && this.workPeriodTo
-            ? html`<span>
-                ${this.workPeriodFrom} —
-                ${this.workPeriodTo}
-              </span>`
+            ? html`<span> ${this.workPeriodFrom} — ${this.workPeriodTo} </span>`
             : ''}
         </summary>
         <slot></slot>

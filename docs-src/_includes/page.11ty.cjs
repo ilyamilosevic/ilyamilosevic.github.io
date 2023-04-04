@@ -17,7 +17,7 @@ module.exports = function (data) {
     <link rel="stylesheet" href="${relative(page.url, '/docs.css')}">
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="/node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="${relative(
+    <script src="${relative(
       page.url,
       '/index.bundled.js'
     )}"></script>
