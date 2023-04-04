@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/jobs/JobListItem"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/jobs/JobList"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/jobs/Job"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/jobs/Jobs"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/jobs/Job.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Job",
+          "members": [
+            {
+              "kind": "field",
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "default": "false",
+              "attribute": "open",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "companyName",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "company-name"
+            },
+            {
+              "kind": "field",
+              "name": "companyDescription",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "company-description"
+            },
+            {
+              "kind": "field",
+              "name": "workPeriodFrom",
+              "type": {
+                "text": "String | undefined"
+              },
+              "attribute": "work-period-from"
+            },
+            {
+              "kind": "field",
+              "name": "workPeriodTo",
+              "type": {
+                "text": "String | undefined"
+              },
+              "attribute": "work-period-to"
+            },
+            {
+              "kind": "method",
+              "name": "onClick",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "im-job-toggle",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "open"
+            },
+            {
+              "name": "company-name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "companyName"
+            },
+            {
+              "name": "company-description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "companyDescription"
+            },
+            {
+              "name": "work-period-from",
+              "type": {
+                "text": "String | undefined"
+              },
+              "fieldName": "workPeriodFrom"
+            },
+            {
+              "name": "work-period-to",
+              "type": {
+                "text": "String | undefined"
+              },
+              "fieldName": "workPeriodTo"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "im-job",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Job",
+          "declaration": {
+            "name": "Job",
+            "module": "src/components/jobs/Job.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "im-job",
+          "declaration": {
+            "name": "Job",
+            "module": "src/components/jobs/Job.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/jobs/JobList.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JobList",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "im-job-list",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JobList",
+          "declaration": {
+            "name": "JobList",
+            "module": "src/components/jobs/JobList.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "im-job-list",
+          "declaration": {
+            "name": "JobList",
+            "module": "src/components/jobs/JobList.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/jobs/JobListItem.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JobListItem",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "im-job-list-item",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JobListItem",
+          "declaration": {
+            "name": "JobListItem",
+            "module": "src/components/jobs/JobListItem.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "im-job-list-item",
+          "declaration": {
+            "name": "JobListItem",
+            "module": "src/components/jobs/JobListItem.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/jobs/Jobs.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Jobs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "defaultNodes",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "defaultNodes"
+            },
+            {
+              "kind": "field",
+              "name": "state",
+              "type": {
+                "text": "string"
+              },
+              "default": "'all-closed'",
+              "attribute": "state"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "experience",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "experience"
+            },
+            {
+              "kind": "field",
+              "name": "items",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "slottedChildren"
+            },
+            {
+              "kind": "method",
+              "name": "onToggle",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "onClick",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultNodes",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "defaultNodes"
+            },
+            {
+              "name": "state",
+              "type": {
+                "text": "string"
+              },
+              "default": "'all-closed'",
+              "fieldName": "state"
+            },
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "title"
+            },
+            {
+              "name": "experience",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "experience"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "im-jobs",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Jobs",
+          "declaration": {
+            "name": "Jobs",
+            "module": "src/components/jobs/Jobs.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "im-jobs",
+          "declaration": {
+            "name": "Jobs",
+            "module": "src/components/jobs/Jobs.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

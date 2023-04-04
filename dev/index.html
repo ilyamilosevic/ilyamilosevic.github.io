@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;my-element> Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../components/jobs/Job.js"></script>
+    <script type="module" src="../components/jobs/JobList.js"></script>
+    <script type="module" src="../components/jobs/JobListItem.js"></script>
+    <script type="module" src="../components/jobs/Jobs.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 48px;
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-size: 0.4rem;
+        padding: 0.5rem;
+        max-width: 640px;
+      }
+
+      @media (max-width: 320px) {
+        body {
+          width: 100%;
+          padding: 0.5rem 0.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <im-jobs>
+      <im-job
+        company-name="Avito"
+        company-description="biggest classifieds site in the world"
+        work-period-from="March 01 2022"
+        work-period-to="March 01 2023"
+      >
+        <im-job-list>
+          <im-job-list-item>
+            developed a shopping cart checkout page for two platforms (desktop
+            and mobile) using React, Redux, and CSS modules, which enabled the
+            launch of the world's first classifieds with a shopping cart
+          </im-job-list-item>
+          <im-job-list-item>
+            developed a user’s stock page with an infinite list of
+            products
+          </im-job-list-item>
+        </im-job-list>
+      </im-job>
+      <im-job
+        company-name="Alfa-bank"
+        company-description="biggest classifieds site in the world"
+        work-period-from="March 01 2022"
+        work-period-to="March 01 2023"
+      >
+        <im-job-list>
+          <im-job-list-item>was the technical lead in the team of 2 front-end developers,
+            directed the formation and prioritization of a backlog of 20+ tasks
+            using Agile methodology, made architectural decisions, and monitored
+            the team's performance, resulting in successful delivery of 2 main
+            projects
+          </im-job-list-item>
+          <im-job-list-item>
+            was the technical lead in the team of 2 front-end developers,
+            directed the formation and prioritization of a backlog of 20+ tasks
+            using Agile methodology, made architectural decisions, and monitored
+            the team's performance, resulting in successful delivery of 2 main
+            projects
+          </im-job-list-item>
+        </im-job-list>
+      </im-job>
+    </im-jobs>
+  </body>
+</html>
