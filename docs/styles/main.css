@@ -283,6 +283,10 @@ hr {
   margin-top: 0;
 }
 
+details hgroup > p:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 480px) {
   heading img {
     display: none;
