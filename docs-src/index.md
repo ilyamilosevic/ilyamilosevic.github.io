@@ -35,7 +35,7 @@ title: Ilya Milošević
                 <dd>cart team</dd>
               </div>
             </dl>
-            <ul class="flow_moderate">
+            <ul class="flow_minor">
               <li>
                 developed a&nbsp;shopping cart checkout page for two platforms
                 (desktop and mobile) using React, Redux and&nbsp;CSS modules,
@@ -63,7 +63,7 @@ title: Ilya Milošević
                 <dd>SME team</dd>
               </div>
             </dl>
-            <ul class="flow_moderate">
+            <ul class="flow_minor">
               <li>
                 was the technical lead in&nbsp;the&nbsp;team
                 of&nbsp;2&nbsp;front-end developers, directed the formation and
@@ -108,7 +108,7 @@ title: Ilya Milošević
                 <dd>front-end team</dd>
               </div>
             </dl>
-            <ul class="flow_moderate">
+            <ul class="flow_minor">
               <li>
                 built an&nbsp;entire front-end of&nbsp;the map widget for book
                 libraries, which is&nbsp;embedded in&nbsp;dozens of&nbsp;pages

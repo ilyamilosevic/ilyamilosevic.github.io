@@ -119,6 +119,7 @@ body {
     'URW Gothic', source-sans-pro, sans-serif;
   padding: var(--space-s);
   padding-left: var(--space-m);
+  padding-bottom: var(--space-m);
   max-width: 640px;
   margin: 0 auto;
 }
