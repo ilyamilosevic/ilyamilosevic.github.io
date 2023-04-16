@@ -310,6 +310,10 @@ details hgroup > p:last-child {
   margin-bottom: 0;
 }
 
+main header > p {
+  flex: none;
+}
+
 .contacts {
   display: flex;
   flex: 1;
