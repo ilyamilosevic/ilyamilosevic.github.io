@@ -13,9 +13,7 @@ module.exports = function (data) {
     <link rel="stylesheet" href="${relative(page.url, '/styles/main.css')}">
   </head>
   <body>
-    <main>
-      ${content}
-    </main>
+    ${content}
   </body>
 </html>`;
 };
