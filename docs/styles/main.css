@@ -33,6 +33,9 @@
 
   /* Custom pairs */
   --space-2xs-s: clamp(0.56rem, calc(-0.12rem + 3.44vw), 1.25rem);
+
+  --prose-bottom-gap: 0.25em;
+  --prose-top-gap: 0.25em;
 }
 
 /* Box sizing rules */
@@ -110,14 +113,20 @@ select {
 }
 
 body {
-  --toggle-width: 26px;
+  --toggle-width: 25px;
 
   font: var(--step-0) Avenir, 'Avenir Next LT Pro', Montserrat, Corbel,
     'URW Gothic', source-sans-pro, sans-serif;
   padding: var(--space-s);
-  padding-left: calc(var(--space-s) + var(--toggle-width));
+  padding-left: var(--space-m);
   max-width: 640px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
 }
 
 h1 {
@@ -130,7 +139,6 @@ h2 {
 
 h3 {
   font-size: var(--step-1);
-  line-height: 1;
 }
 
 a,
@@ -150,7 +158,7 @@ ul {
 }
 
 heading {
-    position: relative;
+  position: relative;
 }
 
 heading ul {
@@ -168,10 +176,10 @@ heading li + li {
 }
 
 heading img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 small {
@@ -187,13 +195,13 @@ dd {
 }
 
 summary {
+  position: relative;
   display: flex;
   align-items: baseline;
-  margin-left: calc(-1 * var(--toggle-width));
 }
 
 summary > p {
-    padding-left: var(--space-s);
+  padding-left: var(--space-xs);
 }
 
 summary::-webkit-details-marker {
@@ -202,8 +210,35 @@ summary::-webkit-details-marker {
 
 details summary::before {
   content: '▶';
-  font-family: "Segoe UI Symbol", "Apple Symbols", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
+  position: absolute;
+  right: 100%;
+  top: 0.15em;
   width: var(--toggle-width);
+  text-align: center;
+  font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Segoe UI Emoji',
+    'Apple Color Emoji', 'Noto Color Emoji';
+}
+
+details ul {
+  padding: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+details li {
+  position: relative;
+}
+
+details li:before {
+  content: '•';
+  top: 0.09em;
+  position: absolute;
+  right: 100%;
+  width: var(--toggle-width);
+  text-align: center;
+  font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Segoe UI Emoji',
+    'Apple Color Emoji', 'Noto Color Emoji';
+  font-size: var(--step-1);
 }
 
 details[open] summary::before {
@@ -219,23 +254,41 @@ hr {
 }
 
 .flow > * + * {
-  margin-top: var(--space-s);
+  margin-top: var(--space-m);
 }
 
 .flow_minor > * + * {
-  margin-top: var(--space-4xs);
-}
-
-.flow_moderate > * + * {
   margin-top: var(--space-2xs);
 }
 
+.flow_moderate > * + * {
+  margin-top: var(--space-xs);
+}
+
 .flow_major > * + * {
-  margin-top: var(--space-l);
+  margin-top: var(--space-xl);
+}
+
+.flow > hr,
+hr {
+  margin: var(--space-m) 0;
+}
+
+.additive-spacing > * {
+  margin-bottom: var(--prose-bottom-gap);
+  margin-top: var(--prose-top-gap);
+}
+
+.additive-spacing > :first-child {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 480px) {
-   heading img {
+  heading img {
     display: none;
-   } 
+  }
+
+  summary > p small {
+    font-size: .7em;
+  }
 }

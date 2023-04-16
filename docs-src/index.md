@@ -23,14 +23,14 @@ title: Ilya Milošević
           <h2>Experience</h2>
           <details class="flow_moderate">
             <summary>
-              <hgroup class="flow_minor">
+              <hgroup class="additive-spacing">
                 <h3>Avito</h3>
                 <p><small>biggest classifieds site in the world</small></p>
               </hgroup>
               <p><small>march 2022 – present</small></p>
             </summary>
             <dl class="flow_moderate">
-              <div class="flow_minor">
+              <div class="additive-spacing">
                 <dt>Senior front-end engineer</dt>
                 <dd>cart team</dd>
               </div>
