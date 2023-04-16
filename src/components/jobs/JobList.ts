@@ -7,7 +7,6 @@ export class JobList extends LitElement {
     ul {
       padding: 0;
       margin: 0;
-      margin-left: 0.4rem;
       list-style: none;
     }
   `;

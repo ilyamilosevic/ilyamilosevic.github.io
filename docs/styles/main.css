@@ -1,0 +1,240 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,640,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,2xs-s&g=2xs,m,l,12 */
+
+:root {
+  --step--2: clamp(0.7rem, calc(0.86rem + -0.39vw), 0.78rem);
+  --step--1: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
+  --step-0: clamp(1.13rem, calc(1rem + 0.63vw), 1.25rem);
+  --step-1: clamp(1.35rem, calc(1.03rem + 1.58vw), 1.67rem);
+  --step-2: clamp(1.62rem, calc(1.02rem + 3.01vw), 2.22rem);
+  --step-3: clamp(1.94rem, calc(0.93rem + 5.08vw), 2.96rem);
+  --step-4: clamp(2.33rem, calc(0.72rem + 8.07vw), 3.95rem);
+  --step-5: clamp(2.8rem, calc(0.34rem + 12.31vw), 5.26rem);
+
+  --space-4xs: clamp(0.13rem, calc(0.13rem + 0vw), 0.13rem);
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.5rem + 0.31vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.81rem + 0.31vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1rem + 0.63vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.5rem + 0.94vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2rem + 1.25vw), 2.5rem);
+  --space-xl: clamp(3.38rem, calc(3rem + 1.88vw), 3.75rem);
+  --space-2xl: clamp(4.5rem, calc(4rem + 2.5vw), 5rem);
+  --space-3xl: clamp(6.75rem, calc(6rem + 3.75vw), 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0rem + 1.56vw), 0.63rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.19rem + 1.88vw), 0.94rem);
+  --space-xs-s: clamp(0.88rem, calc(0.5rem + 1.88vw), 1.25rem);
+  --space-s-m: clamp(1.13rem, calc(0.38rem + 3.75vw), 1.88rem);
+  --space-m-l: clamp(1.69rem, calc(0.88rem + 4.06vw), 2.5rem);
+  --space-l-xl: clamp(2.25rem, calc(0.75rem + 7.5vw), 3.75rem);
+  --space-xl-2xl: clamp(3.38rem, calc(1.75rem + 8.13vw), 5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(1.5rem + 15vw), 7.5rem);
+
+  /* Custom pairs */
+  --space-2xs-s: clamp(0.56rem, calc(-0.12rem + 3.44vw), 1.25rem);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  --toggle-width: 26px;
+
+  font: var(--step-0) Avenir, 'Avenir Next LT Pro', Montserrat, Corbel,
+    'URW Gothic', source-sans-pro, sans-serif;
+  padding: var(--space-s);
+  padding-left: calc(var(--space-s) + var(--toggle-width));
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+  line-height: 1;
+}
+
+a,
+a:hover,
+a:visited {
+  color: black;
+}
+
+a {
+  position: relative;
+  text-decoration-thickness: 2px;
+}
+
+ul {
+  margin: 0;
+  margin-left: var(--space-4xs);
+}
+
+heading {
+    position: relative;
+}
+
+heading ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+heading li {
+  display: inline-block;
+}
+
+heading li + li {
+  margin-left: var(--space-3xs);
+}
+
+heading img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+small {
+  font-size: var(--step--1);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  font-size: var(--step--1);
+}
+
+summary {
+  display: flex;
+  align-items: baseline;
+  margin-left: calc(-1 * var(--toggle-width));
+}
+
+summary > p {
+    padding-left: var(--space-s);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: '\25B6';
+  width: var(--toggle-width);
+}
+
+details[open] summary::before {
+  content: '\25BC';
+}
+
+summary hgroup {
+  flex: 1;
+}
+
+hr {
+  margin: 0;
+}
+
+.flow > * + * {
+  margin-top: var(--space-s);
+}
+
+.flow_minor > * + * {
+  margin-top: var(--space-4xs);
+}
+
+.flow_moderate > * + * {
+  margin-top: var(--space-2xs);
+}
+
+.flow_major > * + * {
+  margin-top: var(--space-l);
+}
+
+@media screen and (max-width: 480px) {
+   heading img {
+    display: none;
+   } 
+}

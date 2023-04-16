@@ -8,10 +8,6 @@ export class Job extends LitElement {
       margin-bottom: 0.4rem;
     }
 
-    details > * {
-      margin-left: 0.4rem;
-    }
-
     summary {
       cursor: pointer;
       position: relative;
@@ -37,8 +33,8 @@ export class Job extends LitElement {
       position: absolute;
       top: 0;
       right: 100%;
-      font-size: 0.4rem;
-      width: 0.55rem;
+      font-size: var(--step--1);
+      width: var(--step-1);
       text-align: center;
     }
 
@@ -47,14 +43,14 @@ export class Job extends LitElement {
     }
 
     h3 {
-      font-size: 0.58rem;
+      font-size: var(--step-3);
       margin: 0;
     }
 
     summary span {
       position: absolute;
       color: #aaa;
-      font-size: 0.3rem;
+      font-size: var(--step--1);
       top: 0;
       right: 0;
     }
@@ -73,14 +69,7 @@ export class Job extends LitElement {
       outline-width: 5px;
     }
 
-    @media (max-width: 500px) {
-      summary span {
-        font-size: 0.2rem;
-      }
-    }
-
     hgroup p {
-      font-size: 0.3rem;
       margin: 0;
     }
 

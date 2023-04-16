@@ -9,40 +9,25 @@ export class Jobs extends LitElement {
   static override styles = css`
     .toggle {
       position: relative;
-      font-size: 0.4rem;
       cursor: pointer;
       user-select: none;
-      margin-left: 0.4rem;
     }
 
     .toggle-inner {
       position: absolute;
       top: 0px;
       right: 100%;
-      font-size: 0.55rem;
-      width: 0.55rem;
+      font-size: var(--step-1);
+      width: var(--step-1);
       text-align: center;
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: var(--step-4);
+      line-height: 1;
       margin: 0;
-      padding-bottom: 0.41rem;
+      padding-bottom: var(--space-xs);
       border-top: 1px solid black;
-    }
-
-    .experience {
-      position: absolute;
-      color: #aaa;
-      font-size: 0.3rem;
-      top: 0;
-      right: 0;
-    }
-
-    @media (max-width: 500px) {
-      .experience {
-        font-size: 0.3rem;
-      }
     }
   `;
 
@@ -106,7 +91,6 @@ export class Jobs extends LitElement {
           ${this.state === 'some-opened' ? '⇡' : ''}
         </div>
         <h2>${this.title}</h2>
-        <div class="experience">${this.experience}</div>
       </div>
       <slot @im-job-toggle=${this.onToggle}></slot>
     `;
