@@ -202,7 +202,7 @@ summary::-webkit-details-marker {
 
 details summary::before {
   content: '▶';
-  font-family: system-ui, sans-serif;;
+  font-family: "Segoe UI Symbol", "Apple Symbols", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
   width: var(--toggle-width);
 }
 
