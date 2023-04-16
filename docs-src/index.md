@@ -21,7 +21,7 @@ title: Ilya Milošević
         </heading>
         <main class="flow">
           <h2>Experience</h2>
-          <details class="flow_moderate" open>
+          <details class="flow_moderate">
             <summary>
               <hgroup>
                 <h3>Avito</h3>
