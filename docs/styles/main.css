@@ -126,7 +126,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1;
 }
 
@@ -140,6 +141,10 @@ h2 {
 
 h3 {
   font-size: var(--step-1);
+}
+
+h4 {
+  font-size: var(--step-0);
 }
 
 a,
@@ -158,29 +163,42 @@ ul {
   margin-left: var(--space-4xs);
 }
 
-heading {
+header {
   position: relative;
 }
 
-heading ul {
+header ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-heading li {
+header li {
   display: inline-block;
 }
 
-heading li + li {
+header li + li {
   margin-left: var(--space-3xs);
 }
 
-heading img {
+header img {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
+}
+
+details header {
+  display: flex;
+  align-items: baseline;
+}
+
+details header > hgroup {
+  flex: 1;
+}
+
+details header > p {
+  padding-left: var(--space-xs);
 }
 
 small {
@@ -213,7 +231,7 @@ details summary::before {
   content: '▶';
   position: absolute;
   right: 100%;
-  top: 0.15em;
+  top: 0.25em;
   width: var(--toggle-width);
   text-align: center;
   font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Segoe UI Emoji',
@@ -250,6 +268,10 @@ summary hgroup {
   flex: 1;
 }
 
+summary {
+  outline: none;
+}
+
 hr {
   margin: 0;
 }
@@ -258,15 +280,19 @@ hr {
   margin-top: var(--space-m);
 }
 
-.flow_minor > * + * {
+.flow_s > * + * {
+  margin-top: var(--space-s);
+}
+
+.flow_2xs > * + * {
   margin-top: var(--space-2xs);
 }
 
-.flow_moderate > * + * {
+.flow_xs > * + * {
   margin-top: var(--space-xs);
 }
 
-.flow_major > * + * {
+.flow_xl > * + * {
   margin-top: var(--space-xl);
 }
 
@@ -289,11 +315,11 @@ details hgroup > p:last-child {
 }
 
 @media screen and (max-width: 480px) {
-  heading img {
+  header img {
     display: none;
   }
 
-  summary > p small {
+  summary > p small, header small {
     font-size: .7em;
   }
 }
