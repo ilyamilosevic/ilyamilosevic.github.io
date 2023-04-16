@@ -202,6 +202,7 @@ summary::-webkit-details-marker {
 
 details summary::before {
   content: '▶';
+  font-family: system-ui, sans-serif;;
   width: var(--toggle-width);
 }
 
