@@ -4,7 +4,7 @@ title: Ilya Milošević
 ---
 
 <div class="flow_major">
-        <heading class="flow">
+        <heading>
           <div class="flow">
             <h1>Ilya Milošević</h1>
             <div>
