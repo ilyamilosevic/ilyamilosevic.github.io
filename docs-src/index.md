@@ -41,13 +41,13 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                developed a&nbsp;shopping cart checkout page for two platforms
+                Developed a&nbsp;shopping cart checkout page for two platforms
                 (desktop and mobile) using React, Redux and&nbsp;CSS modules,
                 which enabled the launch of&nbsp;the&nbsp;world&rsquo;s first
                 classifieds with a&nbsp;shopping cart
               </li>
               <li>
-                developed a&nbsp;user&rsquo;s stock page with an&nbsp;infinite
+                Developed a&nbsp;user&rsquo;s stock page with an&nbsp;infinite
                 list of&nbsp;products
               </li>
             </ul>
@@ -72,7 +72,7 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                was the technical lead in&nbsp;the&nbsp;team
+                Was the technical lead in&nbsp;the&nbsp;team
                 of&nbsp;2&nbsp;front-end developers, directed the formation and
                 prioritization of&nbsp;a&nbsp;backlog of&nbsp;20+&nbsp;tasks
                 using Agile methodology, made architectural decisions, and
@@ -91,12 +91,12 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                built a&nbsp;tariff picker using React and CSS animations,
+                Built a&nbsp;tariff picker using React and CSS animations,
                 streamlining the process of&nbsp;selecting tariffs and resulting
                 in&nbsp;a&nbsp;90% reduction in&nbsp;selection time
               </li>
               <li>
-                managed the development of&nbsp;the form builder. Wrote&nbsp;70%
+                Managed the development of&nbsp;the form builder. Wrote&nbsp;70%
                 of&nbsp;the code, reviewed the remaining 30%. Reduced the amount
                 of&nbsp;code by&nbsp;2&nbsp;times compared to&nbsp;the old
                 version and reduced the release cycle from a&nbsp;week
@@ -104,7 +104,7 @@ title: Ilya Milošević
                 control to&nbsp;content management team
               </li>
               <li>
-                built dozens of&nbsp;highly interactive pages, adding new
+                Built dozens of&nbsp;highly interactive pages, adding new
                 components to&nbsp;the design system using advanced approaches
                 such as&nbsp;compound components, React Context, portals
                 and&nbsp;centralized management of&nbsp;z-index
@@ -135,27 +135,27 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                built an&nbsp;entire front-end of&nbsp;the map widget for book
+                Built an&nbsp;entire front-end of&nbsp;the map widget for book
                 libraries, which is&nbsp;embedded in&nbsp;dozens of&nbsp;pages
                 of&nbsp;LitRes internal and external projects. Provided
                 30&nbsp;&mdash; 40% lightness of&nbsp;the widget compared
                 to&nbsp;similar solutions
               </li>
               <li>
-                implemented a&nbsp;modern design system
+                Implemented a&nbsp;modern design system
                 on&nbsp;a&nbsp;React-based stack, showcased its value
                 to&nbsp;senior management, and persuaded them to&nbsp;transition
                 all main projects, centralizing development and deduplicating
                 code by&nbsp;2&nbsp;times
               </li>
               <li>
-                was the main contributor to&nbsp;the web version of&nbsp;the
+                Was the main contributor to&nbsp;the web version of&nbsp;the
                 book reading application: migrated the application
                 to&nbsp;a&nbsp;new API version for saving quotes and supported
                 the new FB3 format
               </li>
               <li>
-                developed complex pages and widgets such as&nbsp;a&nbsp;page for
+                Developed complex pages and widgets such as&nbsp;a&nbsp;page for
                 viewing all books with multiple filters and a&nbsp;widget for
                 ratings and comments
               </li>
@@ -181,13 +181,13 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                developed a&nbsp;shopping cart checkout page for two platforms
+                Developed a&nbsp;shopping cart checkout page for two platforms
                 (desktop and mobile) using React, Redux and&nbsp;CSS modules,
                 which enabled the launch of&nbsp;the&nbsp;world&rsquo;s first
                 classifieds with a&nbsp;shopping cart
               </li>
               <li>
-                developed a&nbsp;user&rsquo;s stock page with an&nbsp;infinite
+                Developed a&nbsp;user&rsquo;s stock page with an&nbsp;infinite
                 list of&nbsp;products
               </li>
             </ul>
@@ -212,7 +212,7 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                was the technical lead in&nbsp;the&nbsp;team
+                Was the technical lead in&nbsp;the&nbsp;team
                 of&nbsp;2&nbsp;front-end developers, directed the formation and
                 prioritization of&nbsp;a&nbsp;backlog of&nbsp;20+&nbsp;tasks
                 using Agile methodology, made architectural decisions, and
@@ -231,12 +231,12 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                built a&nbsp;tariff picker using React and CSS animations,
+                Built a&nbsp;tariff picker using React and CSS animations,
                 streamlining the process of&nbsp;selecting tariffs and resulting
                 in&nbsp;a&nbsp;90% reduction in&nbsp;selection time
               </li>
               <li>
-                managed the development of&nbsp;the form builder. Wrote&nbsp;70%
+                Managed the development of&nbsp;the form builder. Wrote&nbsp;70%
                 of&nbsp;the code, reviewed the remaining 30%. Reduced the amount
                 of&nbsp;code by&nbsp;2&nbsp;times compared to&nbsp;the old
                 version and reduced the release cycle from a&nbsp;week
@@ -244,7 +244,7 @@ title: Ilya Milošević
                 control to&nbsp;content management team
               </li>
               <li>
-                built dozens of&nbsp;highly interactive pages, adding new
+                Built dozens of&nbsp;highly interactive pages, adding new
                 components to&nbsp;the design system using advanced approaches
                 such as&nbsp;compound components, React Context, portals
                 and&nbsp;centralized management of&nbsp;z-index
@@ -275,27 +275,27 @@ title: Ilya Milošević
             </header>
             <ul class="flow_2xs">
               <li>
-                built an&nbsp;entire front-end of&nbsp;the map widget for book
+                Built an&nbsp;entire front-end of&nbsp;the map widget for book
                 libraries, which is&nbsp;embedded in&nbsp;dozens of&nbsp;pages
                 of&nbsp;LitRes internal and external projects. Provided
                 30&nbsp;&mdash; 40% lightness of&nbsp;the widget compared
                 to&nbsp;similar solutions
               </li>
               <li>
-                implemented a&nbsp;modern design system
+                Implemented a&nbsp;modern design system
                 on&nbsp;a&nbsp;React-based stack, showcased its value
                 to&nbsp;senior management, and persuaded them to&nbsp;transition
                 all main projects, centralizing development and deduplicating
                 code by&nbsp;2&nbsp;times
               </li>
               <li>
-                was the main contributor to&nbsp;the web version of&nbsp;the
+                Was the main contributor to&nbsp;the web version of&nbsp;the
                 book reading application: migrated the application
                 to&nbsp;a&nbsp;new API version for saving quotes and supported
                 the new FB3 format
               </li>
               <li>
-                developed complex pages and widgets such as&nbsp;a&nbsp;page for
+                Developed complex pages and widgets such as&nbsp;a&nbsp;page for
                 viewing all books with multiple filters and a&nbsp;widget for
                 ratings and comments
               </li>
