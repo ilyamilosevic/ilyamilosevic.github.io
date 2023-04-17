@@ -23,8 +23,8 @@ title: Ilya Milošević
   <main class="flow_xl">
     <article class="flow">
       <h2>Experience</h2>
-      <div class="no-print">
-        <details class="flow">
+      <div class="no-print flow">
+        <details class="flow_s">
           <summary>
             <hgroup>
               <h3>Avito</h3>
@@ -53,8 +53,7 @@ title: Ilya Milošević
             </ul>
           </article>
         </details>
-        <hr />
-        <details class="flow">
+        <details class="flow_s">
           <summary>
             <hgroup>
               <h3>Alfa-bank</h3>
@@ -112,8 +111,7 @@ title: Ilya Milošević
             </ul>
           </article>
         </details>
-        <hr />
-        <details class="flow">
+        <details class="flow_s">
           <summary>
             <hgroup>
               <h3>LitRes</h3>
@@ -163,8 +161,8 @@ title: Ilya Milošević
           </article>
         </details>
       </div>
-      <div class="print">
-        <details class="flow" open>
+      <div class="print flow">
+        <details class="flow_s" open>
           <summary>
             <hgroup>
               <h3>Avito</h3>
@@ -193,8 +191,7 @@ title: Ilya Milošević
             </ul>
           </article>
         </details>
-        <hr />
-        <details class="flow" open>
+        <details class="flow_s" open>
           <summary>
             <hgroup>
               <h3>Alfa-bank</h3>
@@ -252,8 +249,7 @@ title: Ilya Milošević
             </ul>
           </article>
         </details>
-        <hr />
-        <details class="flow" open>
+        <details class="flow_s" open>
           <summary>
             <hgroup>
               <h3>LitRes</h3>
@@ -333,4 +329,3 @@ title: Ilya Milošević
     </article>
   </main>
 </div>
-
