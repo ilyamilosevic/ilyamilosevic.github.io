@@ -1,0 +1,112 @@
+---
+layout: page.11ty.cjs
+title: Ilya Milošević
+---
+
+<div class="flow_xl">
+  <header>
+    <div class="flow">
+      <hgroup class="flow_2xs">
+        <h1>Ilya Milošević</h1>
+        <p>front-end engineer</p>
+      </hgroup>
+      <div class="additive-spacing">
+        <p>
+          I&rsquo;ve been working in&nbsp;the field for <em>eight years</em>
+        </p>
+        <p>Experience in&nbsp;<em>fintech</em> and <em>e-commerce</em> companies</p>
+        <p>Open for <em>remote, relocate</em> options</p>
+        <p>Currently in&nbsp;<em>Belgrade, Serbia</em></p>
+      </div>
+    </div>
+    <img src="img/im.jpg" />
+  </header>
+  <main class="flow_xl">
+    <article class="flow">
+      <h2>Experience</h2>
+      <div class="no-print flow_s">
+        {%- for job in jobs %}
+          <details class="flow_s">
+            <summary>
+              <hgroup>
+                <h3>{{ job.company.name }}</h3>
+                <p><small>{{ job.company.description }}</small></p>
+              </hgroup>
+              <p><small>{{ job.overallInterval }}</small></p>
+            </summary>
+            {%- for role in job.roles %}
+              <article class="flow_xs">
+                <header>
+                  <hgroup>
+                    <h4>{{ role.name }}</h4>
+                    <p><small>{{ role.description }}</small></p>
+                  </hgroup>
+                  {% if role.interval %}
+                    <p><small>{{ role.interval }}</small></p>
+                  {% endif %}
+                </header>  
+                <div class="flow_2xs">
+                  {%- for achievement in role.achievements %}
+                    <div class="list-item">
+                      <div class="list-item__content">
+                        {{ achievement | safe }}
+                      </div>
+                    </div>
+                  {%- endfor %}
+                </div>
+              </article>
+            {%- endfor %}
+          </details>
+        {%- endfor %}
+      </div>
+      <div class="print flow">
+        {%- for job in jobs %}
+          <details class="flow_s" open>
+            <summary>
+              <hgroup>
+                <h3>{{ job.company.name }}</h3>
+                <p><small>{{ job.company.description }}</small></p>
+              </hgroup>
+              <p><small>{{ job.overallInterval }}</small></p>
+            </summary>
+            {%- for role in job.roles %}
+              <article class="flow_xs">
+                <header>
+                  <hgroup>
+                    <h4>{{ role.name }}</h4>
+                    <p><small>{{ role.description }}</small></p>
+                  </hgroup>
+                  {% if role.interval %}
+                    <p><small>{{ role.interval }}</small></p>
+                  {% endif %}
+                </header>  
+                <div class="flow_2xs">
+                  {%- for achievement in role.achievements %}
+                    <div class="list-item">
+                      <div class="list-item__content">
+                        {{ achievement | safe }}
+                      </div>
+                    </div>
+                  {%- endfor %}
+                </div>
+              </article>
+            {%- endfor %}
+          </details>
+        {%- endfor %}
+      </div>
+    </article>
+    <article class="flow">
+      <h2>Contacts</h2>
+      <dl class="contacts">
+        {%- for contact in contacts %}
+          <div class="additive-spacing">
+            <dt>{{ contact.type }}</dt>
+            <dd>
+              <a href="{{ contact.value }}">{{ contact.title }}</a>
+            </dd>
+          </div>
+        {%- endfor %}
+      </dl>
+    </article>
+  </main>
+</div>

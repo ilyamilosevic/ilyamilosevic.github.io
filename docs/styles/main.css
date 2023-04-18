@@ -1,39 +1,39 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,640,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,2xs-s&g=2xs,m,l,12 */
 
 :root {
-  --step--2: clamp(0.63rem, calc(0.60rem + 0.18vw), 0.70rem);
+  --step--2: clamp(0.63rem, calc(0.6rem + 0.18vw), 0.7rem);
   --step--1: clamp(0.84rem, calc(0.79rem + 0.24vw), 0.94rem);
   --step-0: clamp(1.13rem, calc(1.06rem + 0.32vw), 1.25rem);
-  --step-1: clamp(1.50rem, calc(1.41rem + 0.42vw), 1.67rem);
-  --step-2: clamp(2.00rem, calc(1.88rem + 0.57vw), 2.22rem);
+  --step-1: clamp(1.5rem, calc(1.41rem + 0.42vw), 1.67rem);
+  --step-2: clamp(2rem, calc(1.88rem + 0.57vw), 2.22rem);
   --step-3: clamp(2.66rem, calc(2.51rem + 0.75vw), 2.96rem);
-  --step-4: clamp(3.55rem, calc(3.34rem + 1.00vw), 3.95rem);
+  --step-4: clamp(3.55rem, calc(3.34rem + 1vw), 3.95rem);
   --step-5: clamp(4.74rem, calc(4.46rem + 1.33vw), 5.26rem);
 
-  --space-4xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
-  --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-4xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
   --space-2xs: clamp(0.56rem, calc(0.53rem + 0.16vw), 0.63rem);
   --space-xs: clamp(0.88rem, calc(0.84rem + 0.16vw), 0.94rem);
   --space-s: clamp(1.13rem, calc(1.06rem + 0.32vw), 1.25rem);
   --space-m: clamp(1.69rem, calc(1.59rem + 0.48vw), 1.88rem);
-  --space-l: clamp(2.25rem, calc(2.12rem + 0.63vw), 2.50rem);
+  --space-l: clamp(2.25rem, calc(2.12rem + 0.63vw), 2.5rem);
   --space-xl: clamp(3.38rem, calc(3.18rem + 0.95vw), 3.75rem);
-  --space-2xl: clamp(4.50rem, calc(4.24rem + 1.27vw), 5.00rem);
-  --space-3xl: clamp(6.75rem, calc(6.36rem + 1.90vw), 7.50rem);
+  --space-2xl: clamp(4.5rem, calc(4.24rem + 1.27vw), 5rem);
+  --space-3xl: clamp(6.75rem, calc(6.36rem + 1.9vw), 7.5rem);
 
   /* One-up pairs */
-  --space-4xs-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-4xs-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
   --space-3xs-2xs: clamp(0.31rem, calc(0.15rem + 0.79vw), 0.63rem);
   --space-2xs-xs: clamp(0.56rem, calc(0.37rem + 0.95vw), 0.94rem);
   --space-xs-s: clamp(0.88rem, calc(0.68rem + 0.95vw), 1.25rem);
-  --space-s-m: clamp(1.13rem, calc(0.73rem + 1.90vw), 1.88rem);
-  --space-m-l: clamp(1.69rem, calc(1.26rem + 2.06vw), 2.50rem);
+  --space-s-m: clamp(1.13rem, calc(0.73rem + 1.9vw), 1.88rem);
+  --space-m-l: clamp(1.69rem, calc(1.26rem + 2.06vw), 2.5rem);
   --space-l-xl: clamp(2.25rem, calc(1.46rem + 3.81vw), 3.75rem);
-  --space-xl-2xl: clamp(3.38rem, calc(2.52rem + 4.13vw), 5.00rem);
-  --space-2xl-3xl: clamp(4.50rem, calc(2.93rem + 7.62vw), 7.50rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.52rem + 4.13vw), 5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(2.93rem + 7.62vw), 7.5rem);
 
   /* Custom pairs */
-  --space-s-l: clamp(1.13rem, calc(0.40rem + 3.49vw), 2.50rem);
+  --space-s-l: clamp(1.13rem, calc(0.4rem + 3.49vw), 2.5rem);
 
   --prose-bottom-gap: 0.25em;
   --prose-top-gap: 0.25em;
@@ -61,8 +61,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -114,12 +114,14 @@ select {
 }
 
 body {
-  --toggle-width: 25px;
+  --toggle-width-base: 20px;
+  --toggle-width: calc(var(--toggle-width-base) + var(--space-2xs));
 
-  font: var(--step-0) Avenir, 'Avenir Next LT Pro', Montserrat, Corbel,
-    'URW Gothic', source-sans-pro, sans-serif;
-  padding: var(--space-s);
-  padding-left: var(--space-m);
+  font: var(--step-0) Avenir, "Avenir Next LT Pro", Montserrat, Corbel,
+    "URW Gothic", source-sans-pro, sans-serif;
+  padding: var(--space-m);
+  padding-left: calc(var(--space-4xs) + var(--toggle-width));
+  padding-right: var(--space-4xs);
   padding-bottom: var(--space-m);
   max-width: 960px;
   margin: 0 auto;
@@ -223,6 +225,26 @@ summary {
   position: relative;
   display: flex;
   align-items: baseline;
+  margin-left: calc(-1 * var(--toggle-width));
+  background: rgba(0, 0, 0, 0.025);
+  padding: var(--space-2xs);
+  padding-left: 0;
+  cursor: pointer;
+}
+
+details article {
+  padding-right: var(--space-2xs);
+}
+
+em {
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.025);
+  padding: 0 0.15em;
+}
+
+summary:focus,
+a:focus {
+  outline: 1px solid;
 }
 
 summary > p {
@@ -234,14 +256,15 @@ summary::-webkit-details-marker {
 }
 
 details summary::before {
-  content: '▶';
-  position: absolute;
-  right: 100%;
-  top: 0.25em;
+  content: "▶";
   width: var(--toggle-width);
   text-align: center;
-  font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Segoe UI Emoji',
-    'Apple Color Emoji', 'Noto Color Emoji';
+  font-family: "Segoe UI Symbol", "Apple Symbols", "Segoe UI Emoji",
+    "Apple Color Emoji", "Noto Color Emoji";
+}
+
+details[open] summary::before {
+  content: "▼";
 }
 
 details ul {
@@ -250,24 +273,25 @@ details ul {
   list-style: none;
 }
 
+.list-item,
 details li {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  margin-left: calc(-1 * var(--toggle-width));
 }
 
+.list-item:before,
 details li:before {
-  content: '•';
-  top: 0.09em;
-  position: absolute;
-  right: 100%;
+  content: "•";
   width: var(--toggle-width);
   text-align: center;
-  font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Segoe UI Emoji',
-    'Apple Color Emoji', 'Noto Color Emoji';
+  font-family: "Segoe UI Symbol", "Apple Symbols", "Segoe UI Emoji",
+    "Apple Color Emoji", "Noto Color Emoji";
   font-size: var(--step-1);
 }
 
-details[open] summary::before {
-  content: '▼';
+.list-item__content {
+  flex: 1;
 }
 
 summary hgroup {
@@ -275,7 +299,7 @@ summary hgroup {
 }
 
 summary {
-  outline: none;
+  margin-left: calc(-1 * var(--toggle-width));
 }
 
 hr {
@@ -331,8 +355,9 @@ main header > p {
     display: none;
   }
 
-  summary > p small, header small {
-    font-size: .7em;
+  summary > p small,
+  header small {
+    font-size: 0.7em;
   }
 }
 
@@ -355,7 +380,13 @@ main header > p {
     display: block;
   }
 
-  details summary:before {
+  summary:before {
     display: none;
+  }
+
+  summary {
+    margin: 0;
+    padding: 0;
+    background: none;
   }
 }
