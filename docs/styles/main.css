@@ -1,14 +1,14 @@
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,640,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,2xs-s&g=2xs,m,l,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,14,1.2,640,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,2xs-s&g=2xs,m,l,12 */
 
 :root {
-  --step--2: clamp(0.63rem, calc(0.6rem + 0.18vw), 0.7rem);
-  --step--1: clamp(0.84rem, calc(0.79rem + 0.24vw), 0.94rem);
-  --step-0: clamp(1.13rem, calc(1.06rem + 0.32vw), 1.25rem);
-  --step-1: clamp(1.5rem, calc(1.41rem + 0.42vw), 1.67rem);
-  --step-2: clamp(2rem, calc(1.88rem + 0.57vw), 2.22rem);
-  --step-3: clamp(2.66rem, calc(2.51rem + 0.75vw), 2.96rem);
-  --step-4: clamp(3.55rem, calc(3.34rem + 1vw), 3.95rem);
-  --step-5: clamp(4.74rem, calc(4.46rem + 1.33vw), 5.26rem);
+  --step--2: clamp(0.5628rem, 0.6525rem + -0.2243vi, 0.6076rem);
+  --step--1: clamp(0.7292rem, 0.7081rem + 0.1051vi, 0.7502rem);
+  --step-0: clamp(0.875rem, 0.75rem + 0.625vi, 1rem);
+  --step-1: clamp(1.05rem, 0.767rem + 1.415vi, 1.333rem);
+  --step-2: clamp(1.26rem, 0.7431rem + 2.5844vi, 1.7769rem);
+  --step-3: clamp(1.512rem, 0.6554rem + 4.283vi, 2.3686rem);
+  --step-4: clamp(1.8144rem, 0.4715rem + 6.7147vi, 3.1573rem);
+  --step-5: clamp(2.1773rem, 0.1458rem + 10.1572vi, 4.2087rem);
 
   --space-4xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
@@ -120,10 +120,7 @@ body {
   font: var(--step-0) Avenir, "Avenir Next LT Pro", Montserrat, Corbel,
     "URW Gothic", source-sans-pro, sans-serif;
   padding: var(--space-m);
-  padding-left: calc(var(--space-4xs) + var(--toggle-width));
-  padding-right: var(--space-4xs);
-  padding-bottom: var(--space-m);
-  max-width: 960px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
@@ -193,10 +190,10 @@ header li + li {
 }
 
 header img {
-  max-width: 200px;
+  max-width: 110px;
 }
 
-details header {
+article header {
   display: flex;
   align-items: baseline;
 }
@@ -221,15 +218,11 @@ dd {
   font-size: var(--step--1);
 }
 
-summary {
+.work-title {
   position: relative;
   display: flex;
   align-items: baseline;
-  margin-left: calc(-1 * var(--toggle-width));
-  background: rgba(0, 0, 0, 0.025);
-  padding: var(--space-2xs);
   padding-left: 0;
-  cursor: pointer;
 }
 
 details article {
@@ -247,7 +240,7 @@ a:focus {
   outline: 1px solid;
 }
 
-summary > p {
+.work-title > p {
   padding-left: var(--space-xs);
 }
 
@@ -294,12 +287,8 @@ details li:before {
   flex: 1;
 }
 
-summary hgroup {
+.work-title hgroup {
   flex: 1;
-}
-
-summary {
-  margin-left: calc(-1 * var(--toggle-width));
 }
 
 hr {
@@ -354,39 +343,14 @@ main header > p {
   header img {
     display: none;
   }
-
-  summary > p small,
-  header small {
-    font-size: 0.7em;
-  }
 }
 
-@media screen {
-  .no-print {
-    display: block;
-  }
-
-  .print {
-    display: none;
-  }
+.work-title + article {
+  break-before: avoid;
 }
 
 @media print {
-  .no-print {
-    display: none;
-  }
-
-  .print {
-    display: block;
-  }
-
-  summary:before {
-    display: none;
-  }
-
-  summary {
-    margin: 0;
-    padding: 0;
-    background: none;
+  body {
+    padding-top: 0;
   }
 }
