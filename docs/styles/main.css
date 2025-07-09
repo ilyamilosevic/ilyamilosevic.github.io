@@ -60,6 +60,11 @@ dd {
   margin: 0;
 }
 
+h2 {
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -117,8 +122,11 @@ body {
   --toggle-width-base: 20px;
   --toggle-width: calc(var(--toggle-width-base) + var(--space-2xs));
 
-  font: var(--step-0) Avenir, "Avenir Next LT Pro", Montserrat, Corbel,
-    "URW Gothic", source-sans-pro, sans-serif;
+  font: var(--step-0) Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-weight: 300;
+  color: white;
+  background-color: black;
   padding: var(--space-m);
   max-width: 640px;
   margin: 0 auto;
@@ -129,6 +137,7 @@ h2,
 h3,
 h4 {
   line-height: 1;
+  font-weight: 400;
 }
 
 h1 {
@@ -150,7 +159,7 @@ h4 {
 a,
 a:hover,
 a:visited {
-  color: black;
+  color: white;
 }
 
 a {
@@ -167,7 +176,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: var(--space-xs);
 }
 
@@ -211,7 +220,7 @@ small {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 dd {
@@ -223,6 +232,19 @@ dd {
   display: flex;
   align-items: baseline;
   padding-left: 0;
+}
+
+.work-list .flow_s:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 1px;
+  background: white;
+  margin-top: var(--space-m);
+}
+
+.work-list .flow_s:last-child:after {
+  display: none;
 }
 
 details article {
